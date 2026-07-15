@@ -150,7 +150,7 @@ export const products: Product[] = [
     id: "madu-bawang-lanang-130gr",
     name: "Madu Bawang Lanang Tunggal 130 Gram",
     slug: "madu-bawang-lanang-tunggal-130-gram",
-    collection: "menu-sarapan",
+    collection: "madu-bawang",
     price: 40000,
     description: "Madu bawang lanang, teman sarapan sehat penuh nutrisi",
     longDescription:

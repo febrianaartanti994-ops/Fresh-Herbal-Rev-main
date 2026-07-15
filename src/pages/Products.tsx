@@ -104,7 +104,10 @@ const Products = () => {
       <section className="relative h-[40vh] md:h-[55vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={currentCollection?.heroImage || `${import.meta.env.BASE_URL}herosection1.png`}
+            src={
+              currentCollection?.heroImage ||
+              `${import.meta.env.BASE_URL}herosection1.png`
+            }
             alt={currentCollection?.name || "All Products"}
             className="w-full h-full object-cover transition-opacity duration-700"
           />

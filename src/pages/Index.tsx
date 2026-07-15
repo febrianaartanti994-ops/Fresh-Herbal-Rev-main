@@ -234,32 +234,16 @@ const Index = () => {
             </h2>
           </motion.div>
 
-          {/* Asymmetric grid layout */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
-            {displayedCollections.map((collection, i) => {
-              // Repeating asymmetric pattern: wide, narrow, narrow, narrow, narrow, wide...
-              const patternIndex = i % 6;
-              const colSpan =
-                patternIndex === 0
-                  ? "md:col-span-7"
-                  : patternIndex === 1
-                    ? "md:col-span-5"
-                    : patternIndex === 5
-                      ? "md:col-span-12"
-                      : "md:col-span-4";
-              const variant =
-                patternIndex === 0 || patternIndex === 5 ? "wide" : "default";
-
-              return (
-                <div key={collection.id} className={colSpan}>
-                  <CollectionCard
-                    collection={collection}
-                    index={i}
-                    variant={variant}
-                  />
-                </div>
-              );
-            })}
+          {/* Grid layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {displayedCollections.map((collection, index) => (
+              <CollectionCard
+                key={collection.id}
+                collection={collection}
+                index={index}
+                variant="default"
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -314,14 +298,14 @@ const Index = () => {
             className="text-center mb-12"
           >
             <p className="text-[11px] font-semibold tracking-[0.3em] uppercase text-primary mb-3">
-              Ikuti Kami
+              Rivew Pelanggan
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
-              @freshherbal.id
+              Dipercaya Ribuan Pelanggan
             </h2>
             <p className="text-muted-foreground max-w-md mx-auto">
-              Bergabunglah dengan komunitas kami dan dapatkan inspirasi hidup
-              sehat serta momen di balik layar produksi Fresh Herbal.
+              Lihat pengalaman nyata pelanggan Fresh Herbal yang telah merasakan
+              manfaat Black Garlic Premium.
             </p>
           </motion.div>
 
