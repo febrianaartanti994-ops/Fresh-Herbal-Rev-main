@@ -89,7 +89,7 @@ export const products: Product[] = [
       "Black Garlic Kotak 1 Kg cocok untuk kebutuhan konsumsi keluarga dalam jumlah besar maupun untuk pelaku usaha yang ingin mengolah kembali black garlic menjadi produk lain. Diproses dengan standar higienis dan fermentasi alami tanpa bahan pengawet.",
     materials: "Kemasan kotak",
     dimensions: "1 kg",
-    images: [`${import.meta.env.BASE_URL}products/BMentah/B1kg.png`],
+    images: [`${import.meta.env.BASE_URL}products/BMentah/1kg.png`],
   },
   {
     id: "black-garlic-kotak-500gr-fresh",
