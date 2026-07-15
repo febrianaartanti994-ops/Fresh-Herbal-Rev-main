@@ -28,8 +28,8 @@ export const collections: Collection[] = [
     name: "Acar",
     slug: "acar",
     description: "",
-    image: `${import.meta.env.BASE_URL}product/acar/acar.png`,
-    heroImage: `${import.meta.env.BASE_URL}product/acar/acar.png`,
+    image: `${import.meta.env.BASE_URL}products/acar/acar.png`,
+    heroImage: `${import.meta.env.BASE_URL}products/acar/acar.png`,
   },
   {
     id: "bawang-mentah",
@@ -37,8 +37,8 @@ export const collections: Collection[] = [
     slug: "bawang-mentah",
     description:
       "Black garlic segar hasil fermentasi alami, tersedia dalam berbagai ukuran kemasan",
-    image: `${import.meta.env.BASE_URL}product/BMentah/bawang.png`,
-    heroImage: `${import.meta.env.BASE_URL}product/BMentah/bawang.png`,
+    image: `${import.meta.env.BASE_URL}products/BMentah/bawang.png`,
+    heroImage: `${import.meta.env.BASE_URL}products/BMentah/bawang.png`,
   },
   {
     id: "madu-bawang",
@@ -46,8 +46,8 @@ export const collections: Collection[] = [
     slug: "madu-bawang",
     description:
       "Bahan dapur herbal pilihan untuk melengkapi masakan sehat sehari-hari",
-    image: `${import.meta.env.BASE_URL}product/MBawang/MaduB.png`,
-    heroImage: `${import.meta.env.BASE_URL}product/MBawang/MaduB.png`,
+    image: `${import.meta.env.BASE_URL}products/MBawang/MaduB.png`,
+    heroImage: `${import.meta.env.BASE_URL}products/MBawang/MaduB.jpeg`,
   },
   {
     id: "madu-bawang-hitam",
@@ -55,8 +55,8 @@ export const collections: Collection[] = [
     slug: "madu-bawang-hitam",
     description:
       "Minuman herbal menyegarkan berbahan dasar black garlic dan madu murni",
-    image: `${import.meta.env.BASE_URL}product/MBawangH/madu.png`,
-    heroImage: `${import.meta.env.BASE_URL}product/MBawangH/madu.png`,
+    image: `${import.meta.env.BASE_URL}products/MBawangH/madu.png`,
+    heroImage: `${import.meta.env.BASE_URL}products/MBawangH/madu.png`,
   },
 ];
 
@@ -73,7 +73,7 @@ export const products: Product[] = [
       "Acar Bawang Putih Tunggal hadir dalam kemasan botol yang higienis, cocok sebagai pelengkap masakan maupun camilan sehat sehari-hari. Dibuat dari bawang putih tunggal pilihan dengan proses pengolahan alami.",
     materials: "Kemasan botol",
     dimensions: "Kemasan botol",
-    images: [`${import.meta.env.BASE_URL}product/acar/Acar100g.png`],
+    images: [`${import.meta.env.BASE_URL}products/acar/Acar100g.jpg`],
     featured: true,
   },
 
@@ -89,7 +89,7 @@ export const products: Product[] = [
       "Black Garlic Kotak 1 Kg cocok untuk kebutuhan konsumsi keluarga dalam jumlah besar maupun untuk pelaku usaha yang ingin mengolah kembali black garlic menjadi produk lain. Diproses dengan standar higienis dan fermentasi alami tanpa bahan pengawet.",
     materials: "Kemasan kotak",
     dimensions: "1 kg",
-    images: [`${import.meta.env.BASE_URL}product/BMentah/B1kg.png`],
+    images: [`${import.meta.env.BASE_URL}products/BMentah/B1kg.png`],
   },
   {
     id: "black-garlic-kotak-500gr-fresh",
@@ -102,7 +102,7 @@ export const products: Product[] = [
       "Black Garlic Kotak 500 Gram hadir dalam kemasan kotak yang praktis dan mudah disimpan. Diolah dari bawang lanang pilihan yang difermentasi secara alami sehingga menghasilkan cita rasa manis legit dan tekstur kenyal khas black garlic premium.",
     materials: "Kemasan kotak",
     dimensions: "500 gram",
-    images: [`${import.meta.env.BASE_URL}product/BMentah/B500g.png`],
+    images: [`${import.meta.env.BASE_URL}products/BMentah/B500g.jpg`],
   },
   {
     id: "black-garlic-250gr-fresh",
@@ -115,12 +115,12 @@ export const products: Product[] = [
       "Black Garlic Kemasan 250 Gram adalah pilihan tepat untuk konsumsi harian. Diproses dengan fermentasi alami tanpa bahan pengawet, menjaga kandungan antioksidan tetap terjaga untuk mendukung daya tahan tubuh keluarga Anda.",
     materials: "Kemasan pouch",
     dimensions: "250 gram",
-    images: [`${import.meta.env.BASE_URL}product/BMentah/B250g.png`],
+    images: [`${import.meta.env.BASE_URL}products/BMentah/B250g.jpg`],
   },
   {
     id: "black-garlic-100gr-suplemen",
     name: "Black Garlic Kemasan 100 Gram",
-    slug: "black-garlic-suplemen-kemasan-250-gram",
+    slug: "black-garlic-suplemen-kemasan-100-gram",
     collection: "bawang-mentah",
     price: 40000,
     description: "Suplemen herbal alami kaya antioksidan untuk konsumsi rutin",
@@ -128,7 +128,7 @@ export const products: Product[] = [
       "Black Garlic Kemasan 100 Gram sebagai suplemen herbal harian membantu menjaga daya tahan tubuh dan kesehatan jantung. Dibuat dari bawang lanang pilihan yang difermentasi secara alami tanpa bahan kimia tambahan.",
     materials: "Kemasan pouch",
     dimensions: "100 gram",
-    images: [`${import.meta.env.BASE_URL}product/BMentah/B100g.png`],
+    images: [`${import.meta.env.BASE_URL}products/BMentah/B100g.jpg`],
     featured: true,
   },
   {
@@ -142,7 +142,7 @@ export const products: Product[] = [
       "Black Garlic Botol 100 Gram dikemas dalam botol praktis yang menjaga kesegaran produk dan mudah dibawa bepergian. Pilihan tepat untuk suplemen herbal harian di tengah aktivitas yang padat.",
     materials: "Kemasan botol",
     dimensions: "100 gram",
-    images: [`${import.meta.env.BASE_URL}product/BMentah/BB100g.png`],
+    images: [`${import.meta.env.BASE_URL}products/BMentah/BB100g.jpg`],
     new: true,
   },
   // Madu Bawang
@@ -157,7 +157,7 @@ export const products: Product[] = [
       "Madu Bawang Lanang Tunggal 130 Gram merupakan perpaduan madu murni dan bawang lanang tunggal yang diproses secara alami. Nikmati sebagai menu sarapan sehat untuk memulai hari dengan energi dan daya tahan tubuh yang optimal.",
     materials: "Kemasan botol",
     dimensions: "130 gram",
-    images: [`${import.meta.env.BASE_URL}product/MBawang/MaduB.jpeg`],
+    images: [`${import.meta.env.BASE_URL}products/MBawang/MaduB130g.jpg`],
     featured: true,
   },
   // Madu Bawang Hitam
@@ -172,7 +172,7 @@ export const products: Product[] = [
       "Madu Bawang Lanang Tunggal 330 Gram merupakan perpaduan madu murni dan bawang lanang tunggal yang diproses secara alami. Nikmati sebagai menu sarapan sehat untuk memulai hari dengan energi dan daya tahan tubuh yang optimal.",
     materials: "Kemasan botol",
     dimensions: "330 gram",
-    images: [`${import.meta.env.BASE_URL}product/MBawangH/MaduH100g.jpg`],
+    images: [`${import.meta.env.BASE_URL}products/MBawangH/MaduH100g.jpg`],
     new: true,
   },
 ];
