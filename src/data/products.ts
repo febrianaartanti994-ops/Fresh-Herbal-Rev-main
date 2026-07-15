@@ -48,7 +48,7 @@ export const collections: Collection[] = [
     description:
       "Bahan dapur herbal pilihan untuk melengkapi masakan sehat sehari-hari",
     image: `${import.meta.env.BASE_URL}products/MBawang/MaduB.png`,
-    heroImage: `${import.meta.env.BASE_URL}products/MBawang/MaduB.jpeg`,
+    heroImage: `${import.meta.env.BASE_URL}products/MBawang/MaduB.png`,
   },
   {
     id: "madu-bawang-hitam",

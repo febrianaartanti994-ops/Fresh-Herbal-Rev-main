@@ -264,8 +264,7 @@ const Index = () => {
               Tentang Kami
             </p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-[1.3] mb-8">
-              Kegelapan yang menyembuhkan. <span className="italic">pause</span>
-              .
+              Kegelapan yang menyembuhkan.
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
               Bawang lanang pilihan, difermentasi 40 hari dengan presisi suhu
@@ -313,14 +312,14 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Video */}
             <div className="lg:col-span-1">
-              <div className="relative aspect-[9/16] overflow-hidden rounded-2xl group">
+              <div className="relative aspect-[9/16] overflow-hidden  group">
                 <video
                   controls
-                  poster="/review-thumbnail.jpg"
+                  poster={`${import.meta.env.BASE_URL}rivew/tmb.png`}
                   className="w-full h-full object-cover"
                 >
                   <source
-                    src={`${import.meta.env.BASE_URL}review/review.mp4`}
+                    src={`${import.meta.env.BASE_URL}rivew/rivew.mp4`}
                     type="video/mp4"
                   />
                 </video>
@@ -336,7 +335,7 @@ const Index = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.08 }}
-                  className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer"
+                  className="relative aspect-square overflow-hidden group cursor-pointer"
                 >
                   <img
                     src={image}
