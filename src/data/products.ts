@@ -27,7 +27,8 @@ export const collections: Collection[] = [
     id: "acar",
     name: "Acar",
     slug: "acar",
-    description: "",
+    description:
+      "kaya akan senyawa allicin dan antioksidan yang sangat baik untuk kesehatan jantung. Konsumsi rutin dapat membantu menurunkan kolesterol jahat. ",
     image: `${import.meta.env.BASE_URL}products/acar/acar.png`,
     heroImage: `${import.meta.env.BASE_URL}products/acar/acar.png`,
   },

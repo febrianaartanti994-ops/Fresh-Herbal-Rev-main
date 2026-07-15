@@ -21,14 +21,14 @@ const Index = () => {
   const heroImageY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  // Instagram placeholder images
-  const instagramImages = [
-    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&q=80",
-    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&q=80",
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80",
-    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80",
-    "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&q=80",
-    "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=400&q=80",
+  // riview
+  const reviewImages = [
+    `${import.meta.env.BASE_URL}rivew/ul1.jpg`,
+    `${import.meta.env.BASE_URL}rivew/ul2.jpg`,
+    `${import.meta.env.BASE_URL}rivew/ul3.jpg`,
+    `${import.meta.env.BASE_URL}rivew/ul4.jpg`,
+    `${import.meta.env.BASE_URL}rivew/ul5.jpg`,
+    `${import.meta.env.BASE_URL}rivew/ul6.jpg`,
   ];
 
   return (
@@ -287,7 +287,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Follow Us / Instagram Section */}
+      {/* Riview Section*/}
       <section className="py-20 md:py-28">
         <div className="container-full">
           <motion.div
@@ -309,30 +309,45 @@ const Index = () => {
             </p>
           </motion.div>
 
-          {/* Instagram Grid */}
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4">
-            {instagramImages.map((image, index) => (
-              <motion.a
-                key={index}
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative aspect-square overflow-hidden group cursor-pointer"
-              >
-                <img
-                  src={image}
-                  alt="Instagram post"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-colors duration-300 flex items-center justify-center">
-                  <Instagram className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-              </motion.a>
-            ))}
+          {/* Rivew */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Video */}
+            <div className="lg:col-span-1">
+              <div className="relative aspect-[9/16] overflow-hidden rounded-2xl group">
+                <video
+                  controls
+                  poster="/review-thumbnail.jpg"
+                  className="w-full h-full object-cover"
+                >
+                  <source
+                    src={`${import.meta.env.BASE_URL}review/review.mp4`}
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+
+            {/* Review Images */}
+            <div className="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {reviewImages.map((image, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.08 }}
+                  className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer"
+                >
+                  <img
+                    src={image}
+                    alt={`Review ${index + 1}`}
+                    className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                  />
+
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition duration-300" />
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
